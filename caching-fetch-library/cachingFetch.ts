@@ -98,9 +98,10 @@ export const preloadCachingFetch = async (url: string): Promise<void> => {
   const response = await fetch(url);
   if(!response.ok){
     throw new Error(`Failed with status: ${response.status}`);
+  
+  }
     const json = await response.json();
     cache.set(url, json);
-  }
 };
 
 /**
