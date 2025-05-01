@@ -13,7 +13,8 @@ A production-ready React hook for data fetching with global caching, in-flight d
 ## Installation
 
 Clone the project and install dependencies:
--git clone https://github.com/fernandev1994/Challange.git
--cd repository-directory
--npm install
--npm start
+
+- git clone https://github.com/fernandev1994/Challange.git
+- cd repository-directory
+- -npm install
+- npm start
