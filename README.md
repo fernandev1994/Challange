@@ -16,9 +16,4 @@ Clone the project and install dependencies:
 git clone https://github.com/fernandev1994/Challange.git
 cd repository-directory
 npm install
-npm start ;
-
-`Run Test
-npm run Test
-
-Ad
+npm start
