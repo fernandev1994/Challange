@@ -119,10 +119,12 @@ export const preloadCachingFetch = async (url: string): Promise<void> => {
  * 4. This file passes a type-check.
  *
  */
+
+//Serialize the cache (used by server)
 export const serializeCache = (): string => {
   return JSON.stringify(Array.from(cache.entries()))
 };
-
+//Initialize the cache (used by the browser)
 export const initializeCache = (serializedCache: string): void => {
 
     const entries:[string,unknown][]= JSON.parse(serializedCache);
@@ -131,7 +133,7 @@ export const initializeCache = (serializedCache: string): void => {
     }
 
 };
-
+//Clear and reset the cache 
 export const wipeCache = (): void => {
   cache.clear()
   inFlightRequests.clear()
